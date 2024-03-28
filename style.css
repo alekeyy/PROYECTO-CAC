@@ -1,94 +1,78 @@
-.kaisei-tokumin-regular {
-    font-family: "Kaisei Tokumin", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-html {
-    font-size: 20px;
-    font-family: "kaisei-tokumin";
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #242424;
+:root {
+    font-size: 16px;
+    --blanco: #fff;
+    --negro: #242424;
+    --rojo: #d16464;
 }
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0 100px;
+}
+
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: #000;
-    position: sticky;
+    justify-content: space-around;
 }
 
 .header--title {
-    color: #fff;
-    margin: 0;
+    color: var(--rojo);
 }
 
-nav {
-    height: 100%;
+header nav {
+    width: 100%;
 }
 
 .nav--list {
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+    width: 100%;
 }
 
-.nav--list li{
+.nav--item {
     display: inline-block;
-    padding: 10px 15px;
 }
 
-.nav--list li:hover {
-    background-color: #363636;
-}
-
-.nav--link{
-    display: inline-block;
-    color: #fff;
+.nav--link {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
-button {
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 5px 25px;
-    margin: 2px;
+.main--image {
+    background-image: url("./img/FONDO.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vw;   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 40px;
+}
+
+.main--content {
+    background-color: var(--blanco);
+    padding: 10px 20px;
+}
+
+.main--text {
+    font-family: 'Montserrat Alternates';
+}
+
+.main--btn {
+    width: 300px;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #000;
-    transition: .3s ease-in;
+    color: var(--blanco);
+    background-color: var(--rojo);
+    font-size: 30px;
+    justify-content: center;
 }
 
-button:hover {
-    color: #000;
-    background-color: #fff;
-    font-size: 1.45rem;
-    filter: drop-shadow(0px 0px 7px #fff);
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: grid;
-    place-content: center;
-    color: #fff;
-    background-color: #000;
-}
