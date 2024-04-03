@@ -1,5 +1,6 @@
 :root {
-    font-size: 16px;
+    font-size: 30px;
+    font-family: 'Righteous';
     --blanco: #fff;
     --negro: #242424;
     --rojo: #d16464;
@@ -7,72 +8,106 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     padding: 0 100px;
+    background-color: #8D8B55;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
+    padding: 10px 10px;
+    margin-bottom: 70px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .header--title {
-    color: var(--rojo);
-}
-
-header nav {
-    width: 100%;
-}
-
-.nav--list {
-    list-style-type: none;
-    width: 100%;
-}
-
-.nav--item {
     display: inline-block;
+    font-size: 60px;
+}
+
+.header--img {
+    width: 72px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header--logo {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.nav--list li {
+    display: inline-block;
+    padding-left: 40px;
 }
 
 .nav--link {
     text-decoration: none;
+    color: #242424
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+.active {
+    color: #8D8B55;
+    border-bottom: 3px solid #8D8B55;
 }
 
 .main--image {
-    background-image: url("./img/FONDO.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vw;   
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-top: 40px;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 20px;
 }
 
 .main--content {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 200px 110px;
+    border-radius: 15px;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    */
+    /**/
     background-color: var(--blanco);
-    padding: 10px 20px;
+    background-image: url(./img/hero.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 .main--text {
-    font-family: 'Montserrat Alternates';
+    color: var(--negro);
+    font-size: 35px;
+}
+
+.text--color {
+    color: #8D8B55;
+    text-transform: uppercase;
 }
 
 .main--btn {
-    width: 300px;
-    border: none;
-    border-radius: 10px;
     color: var(--blanco);
-    background-color: var(--rojo);
-    font-size: 30px;
-    justify-content: center;
+    background-color: #8D8B55;
+    width: 262px;
+    height: 68px;
+    font-size: 50px;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
 }
 
+/*
+<div class="main--content">
+                <h2 class="main--text">The <span class="text--color">BEST</span> place to get your TEA</h2>
+                <button class="main--btn">Shop Now</button>
+            </div>
