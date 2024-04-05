@@ -1,5 +1,5 @@
 :root {
-    font-size: 30px;
+    font-size: 22px;
     font-family: 'Righteous';
     --blanco: #fff;
     --negro: #242424;
@@ -17,30 +17,32 @@ body {
     background-color: #8D8B55;
 }
 
-header {
+header, footer {
     padding: 10px 10px;
-    margin-bottom: 70px;
+    margin-bottom: 4cap;
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header--title {
-    display: inline-block;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .header--img {
-    width: 72px;
-    height: 60px;
+    width: 60px;
+    height: 48px;
     margin-right: 10px;
 }
 
 .header--logo {
-    display: inline-block;
+    display: flex;
 }
 
 nav {
-    display: inline-block;
+    display: flex;
     margin-left: 10%;
 }
 
@@ -68,20 +70,17 @@ nav {
 .main--content {
     width: 100%;
     height: 100%;
-    display: inline-block;
-    padding: 200px 110px;
+    padding: 20px 40px;
     border-radius: 15px;
-    /*
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    */
-    /**/
     background-color: var(--blanco);
     background-image: url(./img/hero.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-origin: content-box;
+    background-position: 85%;
     background-size: contain;
 }
 
@@ -104,6 +103,53 @@ nav {
     margin-top: 40px;
     border: none;
     cursor: pointer;
+}
+
+.main--btn:hover {
+    background-color: #706f41;
+    transition: .4s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    align-items: start;
+    justify-content: center;
+}
+
+label {
+    font-family: monospace;
+    font-weight: bolder;
+    color: silver;
+}
+
+input {
+    width: 100%;
+    padding: 15px 5px;
+    border: 1px solid #c0baba;
+    border-radius: 8px;
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+input[type="button"]{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #8D8B55;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    margin: 0 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /*
