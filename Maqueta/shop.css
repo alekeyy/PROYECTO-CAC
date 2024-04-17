@@ -1,31 +1,123 @@
-.bigItem {
-    background-color: black;
+:root {
+  --blanco: #fff;
+  --negro: #342004;
+  --body: #8ae8cfbe;
+  font-family: "Roboto";
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+button,
+footer {
+  background-color: var(--negro);
+}
+
+.logo img {
+  width: 40%;
+  margin-left: 10%;
+}
+
+#sect-1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: #8ae8cf;
+}
+
+#sect-1 h1 {
+ text-align: center; 
+}
+
+#sect-1 .cuerpo {
+  display: flex;
+  font-size: 1em;
+}
+
+#sect-1 .tienda {
+  width: 50%;
+  align-content: center;
+}
+
+#sect-1 .tienda img {
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 8%;
+  box-shadow: 2px 2px 20px 2px var(--negro);
+}
+
+#sect-1 .parrafo-1 {
+  width: 60%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.utilidades{
+  display: flex;
+  justify-content: space-around;
+  align-items: last baseline;
+  text-align: center;
+}
+
+.utilidades .utilidades2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.utilidades .utilidades2 img {
+  width: 50%;
+}
+
+.utilidades .custom-link {
+  background-color: var(--negro); /* Fondo marrón */
+  border-radius: 10px; /* Bordes redondeados */
+  display: inline-block; /* Para que los estilos se apliquen correctamente */
+  padding: 0.5rem; /* Espaciado interno para que se vea mejor */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+  color: white;  
+}
+
+.utilidades .custom-link h4 {
+  font-size: 1em;
+}
+
+
+/* Media query para pantallas móviles */
+@media screen and (max-width: 480px) {
+  .navbar-toggler .navbar-toggler-icon {
+    color: var(--blanco);
+  }
+
+  .logo img {
+    width: 40%;
+  }
+  
+  #sect-1 h1 {
+    padding-top: 3%;   
+  }
+  
+  #sect-1 .cuerpo {
+    max-width: 100%;
+    flex-direction: column;      
+  }  
+  
+  #sect-1 .tienda {
     width: 100%;
-    height: 100%;
+  }  
+  
+  #sect-1 .parrafo-1 {  
+    width: 100%;   
+    margin-left: 4%;    
+  }
+
+  .utilidades .custom-link { 
+    padding: 0.1rem; 
+  }
+ 
 }
-
-.smolItems {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-}
-
-.itemBox {
-    width: 100%;
-    height: 100%;
-    background-color: #d9d9d9;
-    border: 1px solid black;
-}
-
-
-
-/*<div class="bigItem">
-            <button>Comprar</button>
-        </div>
-        <div class="smolItems">
-            <div class="itemBox i1"></div>
-            <div class="itemBox i2"></div>
-            <div class="itemBox i3"></div>
-            <div class="itemBox i4"></div>
-        </div>

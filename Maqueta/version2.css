@@ -24,6 +24,13 @@ header, footer {
     display: flex;
 }
 
+header .logo {
+    width: 20%;
+    height: 20%;
+}
+
+
+
 section, main {
     display: grid;
 }
