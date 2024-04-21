@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeaTime</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-7">
                 <li class="nav-item">
-                  <a class="nav-link text-light fs-5" aria-current="pege" href="index.html">Home</a>
+                  <a class="nav-link text-light fs-5 border-bottom border-light" aria-current="pege" href="#sect-1" id="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active text-light fs-5 border-bottom border-light" href="#"  id="nav-link">Shop</a>
+                  <a class="nav-link active text-light fs-5" href="./shop.html">Shop</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled text-light fs-5" aria-disabled="true">Contact</a>
@@ -57,39 +56,60 @@
     </header>
 
     <main>
-      <div class="shop">
-        <div class="container">
-          <button>Shop now</button>
+    <section class="hero">
+        <div class="hero--content">
+          <h1 class="hero--title">Tea Time</h1>
+          <p class="hero--text">Este refugio está diseñado para los amantes de esta antigua bebida.
+            Desde los campos de cultivo hasta tu taza, cada hoja de té cuenta
+            una historia y cada sorbo es un abrazo cálido de la naturaleza digital.
+            En este espacio, no solo vendemos tés, sino que también compartimos
+            conocimiento y pasión. 
+            Desde el delicado té blanco hasta el robusto té negro,
+            cada variedad tiene su propio encanto y su historia única </p>
+            <hr>
+          <p class="hero--description">Refugio para los catadores de las hierbas mas selectas</p>
+          <button class="hero--button">Catalogo</button>
         </div>
-        <div class="catalogo">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+        <div class="hero--pic">
+          <img src="./img/tienda2.jpg" alt="" class="hero--image">
         </div>
-      </div>
-      <div class="shop">
-        <div class="container">
-          <button>Shop now</button>
+      </section>
+
+      <section class="section--items">
+        <div class="item">
+            <img src="./img/Cookie.png" alt="" class="item--img">
+            <h3>Galletas</h3>
+            <button class="item--button">COMPRAR AHORA</button>
         </div>
-        <div class="catalogo">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+        <div class="item">
+            <img src="./img/Teacup Set.png" alt="" class="item--img">
+            <h3>Infusiones</h3>
+            <button class="item--button">COMPRAR AHORA</button>
         </div>
-      </div>
-      <div class="shop">
-        <div class="container">
-          <button>Shop now</button>
+        <div class="item">
+            <img src="./img/Moka Pot.png" alt="" class="item--img">
+            <h3>Teteras</h3>
+            <button class="item--button">COMPRAR AHORA</button>
         </div>
-        <div class="catalogo">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+        <div class="item">
+            <img src="./img/Tableware.png" alt="" class="item--img">
+            <h3>Utensilios</h3>
+            <button class="item--button">COMPRAR AHORA</button>
         </div>
-      </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero--pic">
+          <img src="./img/Rectangle 38.png" alt="" class="hero--image">
+        </div>
+        <div class="hero--content alter">
+          <h1 class="hero--subtitle">Los mejores expertos</h1>
+          <p class="hero--text">Tenemos a nuestro alcance un amplio equipo integrado por los mas requeridos baristas y catadores de la zona</p>
+            <hr>
+          <p class="hero--description">Trabaja con nosotros</p>
+          <button class="hero--button">Contacto</button>
+        </div>
+      </section>
     </main>
 
     <footer>
