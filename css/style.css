@@ -52,11 +52,11 @@ body{
 .title-card{
     font-size: 20px;
 }
-.text-info{
+.text-info-contact{
     margin-bottom: 10px;
     padding: 10px 0 0 0;
 }
-.text-info i{
+.text-info-contact i{
     color: #342004;
     margin-right: 10px;
 }
@@ -88,15 +88,15 @@ body{
 }
 .form-button{
     padding: 10px 26px;
-    border: 1px solid #342004;
     border-radius: 20px;
-    color: var(--body);
+    border: 1px solid #342004;
+    color: white;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .form-button:hover{
-    background-color: #342004;
-    color: white;
+    background-color: white;
+    color: #342004;
 }
 /*-----------------------------------*/
 .footer-container{
