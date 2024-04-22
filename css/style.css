@@ -5,10 +5,11 @@
     font-family: "Roboto";
 }
 body{
-    background-color: #d9d9d9
+    background-color: #d9d9d9;
 }
-
-
+.header-tea{
+    z-index: 1;
+}
 .section-contact{
     min-height: 100vh;
     padding: 5rem 0 50px 0;;
@@ -17,13 +18,19 @@ body{
 .container-contact{
     max-width: 1025px;
     margin: auto;
+    background-color: black;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: white;
 }
 .title-contact{
     font-size: 35px;
+    color: white;
 }
 .text-contact{
     font-size: 17px;
     margin: 15px 0 25px 0;
+    color: white;
 }
 .content-contact{
     display: grid;
@@ -38,7 +45,7 @@ body{
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
-    color: #342004
+    color: white;
 }
 .card-info{
     display: grid;
@@ -48,6 +55,7 @@ body{
 .line-info{
     height: 2px;
     margin-top: 26px;
+    z-index: 1;
 }
 .title-card{
     font-size: 20px;
@@ -57,7 +65,7 @@ body{
     padding: 10px 0 0 0;
 }
 .text-info-contact i{
-    color: #342004;
+    color: #8ae8cf;
     margin-right: 10px;
 }
 .contact-form{
@@ -67,7 +75,7 @@ body{
     font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
-    color: #342004
+    color: white;
 }
 .container-form{
     padding: 10px;
@@ -99,34 +107,15 @@ body{
     color: #342004;
 }
 /*-----------------------------------*/
-.footer-container{
-    background-color: #342004;
-}
-.footer-content{
+.footer-copy{
+    color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-width: auto;
 }
-.footer-list{
-    display: flex;
-    text-align: center;
-}
-.footer-item{
-    list-style: none;
-    padding: 20px;
-}
-.footer-link{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-.footer-link:hover{
-    color: black;
-}
-.footer-copy{
-    background-color: black;
-    text-align: center;
-    padding: 4px;
-    color: white;
+.footer-copy p{
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px){
