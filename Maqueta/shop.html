@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeaTime</title>
-    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,98 +23,64 @@
     <header>
       <div class="container-fluid d-flex justify-content-between">
         <div class="logo">
-       <img src="./img/logo 12.png" alt="">
-      </div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-7">
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" aria-current="pege" href="#sect-1">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-5" href="#">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-light fs-5" aria-disabled="true">Contact</a>
-              </li>
-            </ul>
-          </div>
+          <img src="./img/logo 12.png" alt="">
         </div>
-      </nav>
-    </div>
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-7">
+                <li class="nav-item">
+                  <a class="nav-link text-light fs-5" aria-current="pege" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-light fs-5 border-bottom border-light" href="#"  id="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled text-light fs-5" aria-disabled="true">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main>      
-      <section id="sect-1">       
-        <div class="cuerpo">
-          <aside class="tienda">
-            <img src="./img/tienda2.jpg" alt="Logo Tienda del te online">
-          </aside>
-          <aside class="parrafo-1">
-            <Div>
-            <h1>
-              Casa de Té Online
-            </h1>
-          </Div>
-            <p><strong>                
-              Este refugio está diseñado para los amantes de esta antigua bebida.
-              Desde los campos de cultivo hasta tu taza, cada hoja de té cuenta
-              una historia y cada sorbo es un abrazo cálido de la naturaleza digital.
-              En este espacio, no solo vendemos tés, sino que también compartimos
-              conocimiento y pasión. 
-              Desde el delicado té blanco hasta el robusto té negro,
-              cada variedad tiene su propio encanto y su historia única 
-              <hr>
-              Nuestro propósito es hacer que cada taza de té sea especial.
-              Porque el té no es solo una bebida; es un momento de calma, una pausa en el
-              ajetreo del mundo. Así que, tómate un tiempo, elige tu té favorito
-              y sumérgete en la experiencia.
-              </strong>
-            </p>
-          </aside>
-        </div>       
-      </section>
+    <main>
+      <h1 class="shop--title">Infusiones</h1>
+      <div class="shop">
+        <div class="container c1">
+          <button>Shop now</button>
+        </div>
+        <div class="catalogo">
+          <div class="item"><img src="./img/red-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/black-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/brown-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/lemon-tea.avif" alt=""></div>
+        </div>
+      </div>
 
-        <span class="utilidades">
-          <div class="utilidades2">
-            <img src="./img/Moka Pot.png" alt="">
-            <a href="" class="custom-link"><h4>Accesorios</h4></a>
-          </div>
-          <div class="utilidades2">
-            <img src="./img/Tableware.png" alt="">
-            <a href="" class="custom-link"><h4>Tés Medicinales</h4></a>
-          </div>
-          <div class="utilidades2">
-            <img src="./img/Teacup Set.png" alt="">
-            <a href="" class="custom-link"><h4>Variedades</h4></a>
-          </div>
-          <div class="utilidades2">
-            <img src="./img/Cookie.png" alt="">
-            <a href="" class="custom-link"><h4>Origenes</h4></a>
-          </div>          
-        </span>
-
-      <section class="tetera">          
-        <div class="tips">
-          <h3>La Calidad nos identifica</h3>
-          <a href="" class="tips-link"><h5>Té Tips</h5></a>
-        </div> 
-        <div>        
-          <img src="./img/tetera.png" alt="">
-        </div>        
-      </section>
+      <div class="shop">
+        <div class="catalogo">
+          <div class="item"><img src="./img/red-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/black-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/brown-tea.avif" alt=""></div>
+          <div class="item"><img src="./img/lemon-tea.avif" alt=""></div>
+        </div>
+        <div class="container c1">
+          <button>Shop now</button>
+        </div>
+      </div>
     </main>
 
     <footer>

@@ -1,234 +1,83 @@
-:root {
-  --blanco: #fff;
-  --negro: #342004;
-  --body: #8ae8cfbe;
-  font-family: "Roboto";
-  
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-header,
-button,
-footer {
-  background-color: var(--negro);
-}
-
 header {
-  min-width: 100wv;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    z-index: 10;
 }
 
-header .navbar .container-fluid .navbar-toggler {
-  background-color: var(--body);
-  position: fixed;
-  top: 1rem;
-  right: 2rem;
-}
-
-header .container-fluid .logo img {
-  width: 5rem;
-  margin-left: 10%;
-}
-
-header .navbar .container-fluid .collapse ul li {
-  margin-right: 2rem;
-}
-
-
-/* Cambia el color al pasar el mouse */
-.nav-link:hover {
-  color: #ff9900; /* Cambia a tu color deseado */
-}
-
-#sect-1, .tetera {
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  background-color: #8ae8cf;
-  padding-top: 6rem;
-}
-
-#sect-1 .cuerpo {
-  display: flex;
-  font-size: 1em;  
-}
-
-#sect-1 .tienda {
-  width: 50%;
-  align-content: center;
-}
-
-#sect-1 img {
-  width: 75%;
-  margin-left: 20%;
-  border-radius: 8%;
-  box-shadow: 2px 2px 20px 2px var(--negro);
-}
-
-#sect-1 .parrafo-1 {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  padding-right: 10%;
-  text-align: center;
-}
-
-#sect-1 .parrafo-1 h1 {
-  font-size: 1.8rem;
-}
-
-.utilidades{
-  min-width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: last baseline;
-  align-content: center;
-  text-align: center;
-}
-
-.utilidades .utilidades2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.utilidades .utilidades2 img {
-  width: 40%;
-}
-
-.utilidades .custom-link {
-  background-color: var(--negro); /* Fondo marrón */
-  border-radius: 10px; /* Bordes redondeados */
-  display: inline-block; /* Para que los estilos se apliquen correctamente */
-  justify-content: center;
-  align-items: center;
-  padding: 0.2rem 0.3rem; /* Espaciado interno para que se vea mejor */
-  text-decoration: none; /* Quitar el subrayado del enlace */
-  color: white;
-}
-
-.utilidades .custom-link h4 {
-  font-size: 0.7rem;
-}
-
-.tetera {
-  margin-top: 0.2rem;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 2rem;  
-}
-
-.tetera .tips {
-  text-align: center;
-  margin-left: 15rem;
- }
-
- .tetera .tips h3 {
-  font-size: 1.7rem;
- }
-
-.tetera .tips .tips-link {
-  background-color: var(--negro); /* Fondo marrón */
-  border-radius: 10px; /* Bordes redondeados */
-  display: inline-block; /* Para que los estilos se apliquen correctamente */
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1rem; /* Espaciado interno para que se vea mejor */
-  text-decoration: none; /* Quitar el subrayado del enlace */
-  color: white;
-  margin-top: 1rem;
-}
-
-.tetera img {
-  width: 15rem;
-  border-radius: 8%;
-  box-shadow: 2px 2px 20px 2px var(--negro);
-  margin-left: 15rem;
-}
-
-footer {
-  min-width: 100vw;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer h2 {
+.shop--title {
+  padding-top: 5rem;
+  margin-bottom: -4rem;
+  font-size: 3rem;
   color: var(--blanco);
-  font-size: 1rem;
+  border-bottom: 1px solid white;
+  width: 18%;
+}
+
+.shop {
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.container, .catalogo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 10px;
+}
+
+.container button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: none;
+
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-height: 800px;
+}
+
+.item img {
+  width: 100%;
+  max-height: 200px;
+}
+
+/* fondos */
+.c1 {
+  background: url("/Maqueta/img/a.avif");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: none;
+}
+
+@media screen and (max-width: 992px) {
+  .catalogo {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
-
-/* Media query para pantallas móviles */
-@media screen and (max-width: 576px) {
-  .logo img {
-    width: 40%;
-  }
-
-  #sect-1 {
-    padding-top: 12rem;
-  }
-  
-  #sect-1 h1 {
-    padding-top: 3%;   
-  }
-  
-  #sect-1 .cuerpo {
-    flex-direction: column;      
-  }  
-  
-  #sect-1 .tienda img {
-    width: 18rem;
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-    border-radius: 8%;
-    box-shadow: 2px 2px 20px 2px var(--negro);
-  }
-  
-  #sect-1 .parrafo-1 {  
-    width: 100%;   
-    margin-left: 0.5rem;    
-  }
-  .tetera {
-    margin-top: 1rem;    
-  }
-
-  .tetera .tips {
-    margin: 1rem; 
-  }
-
-  .tetera .tips h3 {
-    font-size: 0.9rem;
-  }
-  
-  .tetera .tips .tips-link {
-    padding: 0.2rem 1.9rem; /* Espaciado interno para que se vea mejor */    
-  }
-
-  .tetera .tips .tips-link h5 {
-    font-size: 0.8rem;
-  }
-  
-  .tetera img {
-    width: 8rem;
-    margin-left: 2rem;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
+/*<main>
+      <div class="shop">
+        <div class="container">
+          <button>Shop now</button>
+        </div>
+        <div class="catalogo">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+    </main>
