@@ -2,20 +2,28 @@ header {
     z-index: 10;
 }
 
+.shop--title {
+  padding-top: 5rem;
+  margin-bottom: -4rem;
+  font-size: 3rem;
+  color: var(--blanco);
+  border-bottom: 1px solid white;
+  width: 18%;
+}
+
 .shop {
     padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .container, .catalogo {
     width: 100%;
     height: 100%;
     position: relative;
-    border: 1px solid black;
     margin: 10px;
 }
 
@@ -36,11 +44,27 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    max-height: 800px;
 }
 
-.item {
-    border: 1px solid black;
-    background-color: wheat;
+.item img {
+  width: 100%;
+  max-height: 200px;
+}
+
+/* fondos */
+.c1 {
+  background: url("/Maqueta/img/a.avif");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: none;
+}
+
+@media screen and (max-width: 992px) {
+  .catalogo {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
