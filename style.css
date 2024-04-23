@@ -119,18 +119,22 @@ main {
 }
 
 .hero--button {
-  padding: 0.7rem;
+  display: inline-block;
+  padding: 20px;
   font-size: 1.5rem;
   font-weight: bolder;
-  background-color: #8ae8cf;
-  color: #342004;
+  background-color: #342004;
+  color: var(--blanco);
   border: none;
-  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .hero--button:hover {
-  background-color: #3420047d;
-  color: var(--body);
+  transform: scale(1.05);
+  background-color: var(--blanco);
+  color: #342004;
+  transition: .3s ease-in;
 }
 
 .hero--image {

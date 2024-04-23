@@ -20,23 +20,11 @@ header {
     height: fit-content;
 }
 
-.container, .catalogo {
+.catalogo {
     width: 100%;
     height: 100%;
     position: relative;
     margin: 10px;
-}
-
-.container button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px 30px;
-    margin: 20px;
-    background-color: var(--blanco);
-    color: var(--negro);
-    border: none;
-
 }
 
 .catalogo {
@@ -50,6 +38,11 @@ header {
   background-color: var(--blanco);
   text-align: left;
   padding: 10px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  transition: .5s ease;
 }
 
 .item img {
