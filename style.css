@@ -51,12 +51,19 @@ header .navbar .container-fluid .collapse ul li {
   margin-right: 2rem;
 }
 
+header .navbar .container-fluid .collapse ul li:hover {
+  background: var(--body);
+  border-radius: 0.5rem;
+  transform: translate(0.5rem);
+}
+
 main {
-  background: url("./img/hero--banner.avif");
+  background: url("./bg-prueba.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: border-box;
   padding-bottom: 2rem;
+  min-width: 100vw;
 }
 
 
@@ -75,10 +82,18 @@ main {
 }
 
 .hero--title, .hero--subtitle {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bolder;
   letter-spacing: -5px;
   word-spacing: 5px;
+}
+
+.hero--title {  
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__flip; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 20s; /* don't forget to set a duration! */
 }
 
 .hero--subtitle {
@@ -86,7 +101,7 @@ main {
 }
 
 .hero--text {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
   max-width: 100%;
   padding-left: 5px;
@@ -103,16 +118,24 @@ main {
 }
 
 .hero--button {
-  padding: 20px;
+  padding: 0.7rem;
   font-size: 1.5rem;
   font-weight: bolder;
   background-color: #8ae8cf;
   color: #342004;
   border: none;
+  border-radius: 0.5rem;
+}
+
+.hero--button:hover {
+  background-color: #3420047d;
+  color: var(--body);
 }
 
 .hero--image {
-  width: 100%;
+  width: 90%;
+  margin-left: 1rem;
+
   box-shadow: 1px 1px 10px black;
 }
 
@@ -124,8 +147,9 @@ main {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px 0;
-  margin-top: 5rem;
+  padding: 0.5rem;
+  margin-top: 15rem;
+  border-radius: 0.5rem;
 }
 
 .item {
@@ -136,22 +160,30 @@ main {
 }
 
 .item--button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   width: 50%;
-  padding: 10px 0px;
-  font-size: 18px;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
   color: white;
+  background-color: var(--negro);
   border: none;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
 .item--button:hover {
-  background-color: #d9d9d9;
+  background-color: var(--body);
+  color: var(--negro);
+}
+
+.item h3 {
+  font-size: 1.5rem;
 }
 
 .item--img {
-  width: 74px;
-  height: 74px;
-  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;  
 }
 
 footer {
