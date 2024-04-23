@@ -17,7 +17,8 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 header,
@@ -141,7 +142,7 @@ main {
 
 
 .section--items {
-  background-color: var(--blanco);
+  background-color: rgba(255, 255, 255, 0.185);
   display: grid;
   width: 100%;
   justify-content: center;
