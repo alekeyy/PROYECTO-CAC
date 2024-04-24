@@ -7,7 +7,7 @@
 }
 
 .active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--blanco);
 }
 
 * {
@@ -60,7 +60,7 @@ header .navbar .container-fluid .collapse ul li {
 header .navbar .container-fluid .collapse ul li a:hover, .nav--link {
   background: var(--body);
   color: #342004;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
 header .navbar .container-fluid .collapse ul li a {
@@ -250,6 +250,18 @@ main {
     justify-content: center;
     align-items: center;
   }
+  
+  hr {
+    margin: 0;
+  }
+
+  .alter {
+    text-align: left;
+  }
+
+  .hero--title {
+    text-align: center;
+  }
 
   .hero--button {
     width: 80%;
@@ -322,7 +334,11 @@ main {
   .hero--button {
     font-size: 1rem;
   }
-
+  
+  
+  hr {
+    margin: 0;
+  }
 
   .item--button {
     font-size: 0.6rem;
