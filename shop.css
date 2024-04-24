@@ -69,7 +69,17 @@ header {
   background-repeat: none;
 }
 
-
+/* footer */
+.footer-copy{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+}
+.footer-copy p{
+  margin-bottom: 0;
+}
 
 @media screen and (max-width: 992px) {
   .catalogo {
