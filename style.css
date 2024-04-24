@@ -7,7 +7,7 @@
 }
 
 .active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--blanco);
 }
 
 * {
@@ -60,7 +60,7 @@ header .navbar .container-fluid .collapse ul li {
 header .navbar .container-fluid .collapse ul li a:hover, .nav--link {
   background: var(--body);
   color: #342004;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
 header .navbar .container-fluid .collapse ul li a {
@@ -76,6 +76,25 @@ main {
   min-width: auto;
 }
 
+.arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background: #342004a4;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow .go-top-link {  
+  font-size: 30px;
+  color: #007bff;
+  text-decoration: none;
+}
 
 .hero {
   padding-top: 10rem;
@@ -103,7 +122,7 @@ main {
   margin: 0 0.5rem;
 
   animation: animate__flip; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 20s; /* don't forget to set a duration! */
+  animation-duration: 5s; /* don't forget to set a duration! */
 }
 
 .hero--subtitle {
@@ -148,8 +167,6 @@ main {
 
 .hero--image {
   width: 100%;
-  margin-left: 1rem;
-
   box-shadow: 1px 1px 10px black;
 }
 
@@ -233,6 +250,18 @@ main {
     justify-content: center;
     align-items: center;
   }
+  
+  hr {
+    margin: 0;
+  }
+
+  .alter {
+    text-align: left;
+  }
+
+  .hero--title {
+    text-align: center;
+  }
 
   .hero--button {
     width: 80%;
@@ -267,7 +296,21 @@ main {
   main {
     padding-bottom: 2rem;
   }
-  
+
+  .arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background: #342004a4;
+    position: fixed;
+    bottom: 3rem;
+    right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero {
     padding-top: 5rem;
   }
@@ -291,7 +334,11 @@ main {
   .hero--button {
     font-size: 1rem;
   }
-
+  
+  
+  hr {
+    margin: 0;
+  }
 
   .item--button {
     font-size: 0.6rem;
