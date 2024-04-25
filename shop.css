@@ -57,6 +57,11 @@ header {
   width: 100%;
 }
 
+.item .hero--button {
+  width: 100%;
+  padding: .2rem 0;
+}
+
 .bold {
   font-weight: bold;
 }
