@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Maqueta/shop.html"
+    "livePreview.defaultPreviewPath": "/Maqueta/shop.html",
+    "liveServer.settings.port": 5501
 }
