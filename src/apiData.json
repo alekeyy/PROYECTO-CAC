@@ -1,0 +1,42 @@
+{
+    "TeaData": [{     
+            "id": 1,
+            "title": "Té Finas hierbas",
+            "price": "4300"
+        },
+        {     
+            "id": 2,
+            "title": "Té Limón",
+            "price": "2000"
+        },
+        {     
+            "id": 3,
+            "title": "Té Naranja-Mango",
+            "price": "2700"
+        },
+        {     
+            "id": 4,
+            "title": "Té Menta",
+            "price": "2100"
+        },
+        {     
+            "id": 5,
+            "title": "Té Frutilla",
+            "price": "1800"
+        },
+        {     
+            "id": 6,
+            "title": "Té Naranja",
+            "price": "1500"
+        },
+        {     
+            "id": 7,
+            "title": "Té Lavanda",
+            "price": "2000"
+        },
+        {     
+            "id": 8,
+            "title": "Té Mix",
+            "price": "3100"
+        }]
+}

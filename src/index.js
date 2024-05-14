@@ -1,64 +1,5 @@
-/* EN CATALOGO INYECTAR 
-<div class="item">
-            <img src="./img/shop/1.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$4300</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/2.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$2000</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">  
-            <img src="./img/shop/3.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$2700</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/4.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$2100</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/5.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$1800</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/6.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$1500</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/7.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$2000</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-
-          <div class="item">
-            <img src="./img/shop/8.webp" alt="Caja de saquitos de té">
-            <h3></h3>
-            <p>Precio: <span class="bold">$3100</span></p>
-            <a href="" class="hero--button">COMPRAR</a>
-          </div>
-        </div>
-      </div>
-*/
-
 let arrItems = [];
+import TeaData from "./apiData.json" with { type: 'json'};
 
 function renderItem(arrACopiar){
     const arrNuevo = arrACopiar.map(x=>item(x));
@@ -78,6 +19,11 @@ function item(x){
 }
 
 function main(){
+    console.log(TeaData);
+    // fetch("/apiData")
+    //   .then(res => res.json())
+    //   .then(data => console.log(data));
+
     arrItems.push(
     {
         id: 1,
