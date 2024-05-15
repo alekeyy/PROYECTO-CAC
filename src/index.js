@@ -1,8 +1,8 @@
 let arrItems = [];
-import TeaData from "./apiData.json" with { type: 'json'};
 
 function renderItem(arrACopiar){
     const arrNuevo = arrACopiar.map(x=>item(x));
+    console.log("asdasd");
 
     document.getElementById("catalogo").innerHTML = arrNuevo.join(" ");
 }
@@ -19,55 +19,18 @@ function item(x){
 }
 
 function main(){
-    console.log(TeaData);
-    // fetch("/apiData")
-    //   .then(res => res.json())
-    //   .then(data => console.log(data));
+    // console.log(TeaData);
 
-    arrItems.push(
-    {
-        id: 1,
-        title: "Té Finas hierbas",
-        price: "4300"
-    },  
-    {
-        id: 2,
-        title: "Té Limón",
-        price: "2000"
-    },  
-    {
-        id: 3,
-        title: "Té Naranja-Mango",
-        price: "2700"
-    },  
-    {
-        id: 4,
-        title: "Té Menta",
-        price: "2100"
-    },
-    {
-        id: 5,
-        title: "Té Frutilla",
-        price: "1800"
-    },  
-    {
-        id: 6,
-        title: "Té Naranja",
-        price: "1500"
-    },  
-    {
-        id: 7,
-        title: "Té Lavanda",
-        price: "2000"
-    },  
-    {
-        id: 8,
-        title: "Té Mix",
-        price: "3100"
-    },   
-    );
-
-    renderItem(arrItems);
+    fetch('src/apiData.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            for(let teaItem of data.TeaData){ //teaItem debido a que item es una funcion
+                arrItems.push(teaItem)
+            }
+            console.log(arrItems);
+            renderItem(arrItems); //Lo movi aca por que si esta fuera del then, se ejecuta primero sin que suceda la insercion de datos.
+        })
 }
 
 main();
