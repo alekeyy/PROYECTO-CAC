@@ -14,22 +14,26 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #3420049a ;
+    border-radius: 2rem;
 }
 
 .form label {
     text-align: left;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .form input {
     padding: 5px;
     margin-bottom: 1rem;
+    border-radius: 0.1rem;
 }
 
 .form button {
     background-color: var(--negro);
     color: #fff;
-    padding: 5px;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.1rem;
 }
