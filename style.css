@@ -313,23 +313,24 @@ main {
   }
 
   .hero {
+    height: 100%;
     padding-top: 5rem;
   }
 
   .hero--title, .hero--subtitle {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   
   .hero--subtitle {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
   
   .hero--text {
-    font-size: 0.7rem;
+    font-size: .8rem;
   }
   
   .hero--description {
-    font-size: .9rem;
+    font-size: 1.3rem;
   }
   
   .hero--button {

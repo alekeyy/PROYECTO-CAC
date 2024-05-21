@@ -1,6 +1,6 @@
 
 main {
-    background: url("https://plus.unsplash.com/premium_photo-1667354155667-d41928b81cbc?q=80&w=1369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-color: #242424;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -8,9 +8,9 @@ main {
 }
 
 .form {
-    padding: 2rem;
+    padding: 1rem;
     height: 100%;
-    width: 100%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,22 +18,42 @@ main {
     border-radius: 2rem;
 }
 
+.form .option {
+    display: grid;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 .form label {
     text-align: left;
     color: #fff;
     font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
 }
 
-.form input {
-    padding: 5px;
-    margin-bottom: 1rem;
-    border-radius: 0.1rem;
-}
-
-.form button {
-    background-color: var(--negro);
+.form input, .login-btn {
     color: #fff;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border-radius: 0.1rem;
+    background-color: #474242;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.form span {
+    color: #fff;
+}
+
+.form input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightblue;
+}
+
+.login-btn {
+    color: #fff;
+    background-color: #3E630F;
+    font-size: 25px;
+    font-weight: bold;
 }
