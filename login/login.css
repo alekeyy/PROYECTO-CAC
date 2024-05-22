@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.box{
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 400px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    transition: height .3s ease;
+}
+.box.active{
+    height: 520px;
+}
+.box.active .container-login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.box .container-login{
+    width: 100%;
+    padding: 40px;
+    transition: transform .18s ease;
+    transform: translateX(0)
+}
+.box .container-register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+    width: 100%;
+    padding: 24px;
+}
+.box.active .container-register{
+    transition: transform .18s ease;
+    transform: translateX(0)
+}
+.title-box{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 14px 0;
+}
+.content-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.label-box{
+    position: absolute;
+    bottom: 90%;
+    left: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px 0 10px 0;
+}
+.input-box{
+    width: 100%;
+    height: 85%;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    padding: 14px;
+    font-weight: 600;
+}
+
+.terms-box{
+    font-size: 14px;
+    color: #fff;
+    margin: -15px 0 15px;
+    display: flex;
+}
+.input-check{
+    accent-color: #8ae8cfbe;
+    margin-right: 8px;
+}
+.text-error{
+    padding-top: 12px;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button-box{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #342004;
+    border-radius: 8px;
+    background-color: #342004;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.button-box:hover{
+    border: 2px solid #563609;
+    background-color: #563609;
+    color: #fff;
+}
+.register-login{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 16px 0 10px;
+}
+.login-link{
+    color: #8ae8cfbe;
+    font-weight: 500;
+    text-decoration: none;
+}
+.login-link:hover{
+    text-decoration: underline;
+}
+.register-link{
+    color: #8ae8cfbe;
+    font-weight: 500;
+    text-decoration: none;
+}
+.register-link:hover{
+    text-decoration: underline;
+}
