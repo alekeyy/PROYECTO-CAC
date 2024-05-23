@@ -6,7 +6,10 @@
 .main-box{
     display: flex;
     justify-content: center;
-    padding: 100px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 0 40px 0;
 }
 .box{
     position: relative;
@@ -131,4 +134,13 @@
 }
 .register-link:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 360px){
+    .box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
 }
