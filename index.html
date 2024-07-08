@@ -17,17 +17,17 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-  <link rel="stylesheet" type="text/css" href="style.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
       <div class="container-fluid d-flex justify-content-between">
         <div class="logo">
-          <img src="./img/logo 12.png" alt="">
+          <img src="./img/logo 12.png" alt="" />
         </div>
         <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
@@ -45,7 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-7">
                 <li class="nav-item">
-                  <a class="nav-link fs-5 border-bottom border-light" aria-current="pege" href="" id="hero1">Inicio</a>
+                  <a
+                    class="nav-link fs-5 border-bottom border-light"
+                    aria-current="pege"
+                    href=""
+                    id="hero1"
+                    >Inicio</a
+                  >
                 </li>
                 <li class="nav-item logged">
                   <a class="nav-link fs-5" href="./shop.html">Tienda</a>
@@ -54,7 +60,12 @@
                   <a class="nav-link fs-5" href="./contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fs-5" href="./login.html" id="button-logged">Iniciar Sesion</a>
+                  <a
+                    class="nav-link text-light fs-5"
+                    href="./login.html"
+                    id="button-logged"
+                    >Iniciar Sesion</a
+                  >
                 </li>
               </ul>
             </div>
@@ -62,61 +73,74 @@
         </nav>
       </div>
       <button class="arrow">
-       <a href="#" class="go-top-link">&uarr;</a>
+        <a href="#" class="go-top-link">&uarr;</a>
       </button>
     </header>
 
     <main>
-    <section class="hero" id="hero1">
+      <section class="hero" id="hero1">
         <div class="hero--content">
           <h1 class="hero--title animate__animated animate__flip">Tea Time</h1>
-          <p class="hero--text">Este refugio está diseñado para los amantes de esta antigua bebida.
+          <p class="hero--text">
+            Este refugio está diseñado para los amantes de esta antigua bebida.
             Desde los campos de cultivo hasta tu taza, cada hoja de té cuenta
-            una historia y cada sorbo es un abrazo cálido de la naturaleza digital.
-            En este espacio, no solo vendemos tés, sino que también compartimos
-            conocimiento y pasión. 
-            Desde el delicado té blanco hasta el robusto té negro,
-            cada variedad tiene su propio encanto y su historia única </p>
-            <hr>
-          <p class="hero--description">Refugio para los catadores de las hierbas mas selectas</p>
+            una historia y cada sorbo es un abrazo cálido de la naturaleza
+            digital. En este espacio, no solo vendemos tés, sino que también
+            compartimos conocimiento y pasión. Desde el delicado té blanco hasta
+            el robusto té negro, cada variedad tiene su propio encanto y su
+            historia única
+          </p>
+          <hr />
+          <p class="hero--description">
+            Refugio para los catadores de las hierbas mas selectas
+          </p>
           <a class="hero--button" href="./shop.html">Catalogo</a>
         </div>
         <div class="hero--pic">
-          <img src="./img/tienda2.jpg" alt="" class="hero--image">
+          <img src="./img/tienda2.jpg" alt="" class="hero--image" />
         </div>
       </section>
 
       <section class="section--items">
         <div class="item">
-            <img src="./img/Cookie.png" alt="" class="item--img">
-            <h3>Galletas</h3>
-            <button class="item--button">COMPRAR AHORA</button>
+          <img src="./img/Cookie.png" alt="" class="item--img" />
+          <h3>Galletas</h3>
+          <button class="item--button">COMPRAR AHORA</button>
         </div>
         <div class="item">
-            <img src="./img/Teacup Set.png" alt="" class="item--img">
-            <h3>Infusiones</h3>
-            <a class="item--button" href="./shop.html">COMPRAR AHORA</a>
+          <img src="./img/Teacup Set.png" alt="" class="item--img" />
+          <h3>Infusiones</h3>
+          <a class="item--button" href="./shop.html">COMPRAR AHORA</a>
         </div>
         <div class="item">
-            <img src="./img/Moka Pot.png" alt="" class="item--img">
-            <h3>Teteras</h3>
-            <button class="item--button">COMPRAR AHORA</button>
+          <img src="./img/Moka Pot.png" alt="" class="item--img" />
+          <h3>Teteras</h3>
+          <button class="item--button">COMPRAR AHORA</button>
         </div>
         <div class="item">
-            <img src="./img/Tableware.png" alt="" class="item--img">
-            <h3>Utensilios</h3>
-            <button class="item--button">COMPRAR AHORA</button>
+          <img src="./img/Tableware.png" alt="" class="item--img" />
+          <h3>Utensilios</h3>
+          <button class="item--button">COMPRAR AHORA</button>
         </div>
+        <!-- Mensaje de error -->
+        <div id="error-message" style="display: none; color: red"></div>
       </section>
 
       <section class="hero">
         <div class="hero--pic">
-          <img src="./img/Rectangle 38.png" alt="Guy doing coffee stuff" class="hero--image">
+          <img
+            src="./img/Rectangle 38.png"
+            alt="Guy doing coffee stuff"
+            class="hero--image"
+          />
         </div>
         <div class="hero--content alter">
           <h1 class="hero--subtitle">Los mejores expertos</h1>
-          <p class="hero--text">Tenemos a nuestro alcance un amplio equipo integrado por los mas requeridos baristas y catadores de la zona</p>
-            <hr>
+          <p class="hero--text">
+            Tenemos a nuestro alcance un amplio equipo integrado por los mas
+            requeridos baristas y catadores de la zona
+          </p>
+          <hr />
           <p class="hero--description">Trabaja con nosotros</p>
           <a class="hero--button" href="./contacto.html">Contacto</a>
         </div>
@@ -134,5 +158,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>  
+  </body>
 </html>
