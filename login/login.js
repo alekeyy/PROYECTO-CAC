@@ -18,7 +18,7 @@ const passwordLogin = document.getElementById("password-login");
 const errorLogin = document.getElementById("warning-login");
 
 //Valida los campos del formulario y si el usuario existe o necesita registrarse.
-formLogin.addEventListener("submit", (e) => {
+formLogin.addEventListener("submit", async (e) => {
     e.preventDefault();
     let user;
     const textError = [];
@@ -28,11 +28,16 @@ formLogin.addEventListener("submit", (e) => {
     if(passwordLogin.value == "") {
         textError.push("*Por favor, introduzca su contraseña.");
     }
-    let data = localStorage.getItem("dataRegister");
-    data = data ? JSON.parse(data) : [];
+    let data = [];
+    await fetch("http://localhost:8080/userRegister/")
+            .then((res) => res.json())
+            .then((res2) => {
+                console.log(res2);
+                data = res2; 
+            });
 
     if(data.length > 0 && textError.length == 0) {
-        user = data.find(item => emailLogin.value == item.email && passwordLogin.value == item.password);
+        user = data.find(item => emailLogin.value == item.email && passwordLogin.value == item.clave);
         if(user){
             localStorage.setItem("dataLogin", JSON.stringify(user));
             document.location.href = "index.html";
@@ -60,7 +65,7 @@ const passwordRegister = document.getElementById("password-register");
 const errorRegister = document.getElementById("warning-register");
 
 //Valida los campos del formulario y si el usuario ya esta registrado.
-formRegister.addEventListener("submit", (e) => {
+formRegister.addEventListener("submit", async (e) => {
     e.preventDefault();
     const textError = [];
     if(username.value == "") {
@@ -76,8 +81,13 @@ formRegister.addEventListener("submit", (e) => {
         errorRegister.innerHTML = textError.join("<br>");
     }
     else{
-        let data = localStorage.getItem("dataRegister");
-        data = data ? JSON.parse(data) : [];
+        let data = [];
+        await fetch("http://localhost:8080/userRegister/")
+            .then((res) => res.json())
+            .then((res2) => {
+                console.log(res2);
+                data = res2; 
+            });
         let dataRegister = {
             username: username.value,
             email: emailRegister.value,
@@ -88,9 +98,16 @@ formRegister.addEventListener("submit", (e) => {
             errorRegister.innerHTML = "Usuario ya registrado.";
         }
         else{
-            data.push(dataRegister);
-            localStorage.setItem("dataRegister", JSON.stringify(data));
+            fetch("http://localhost:8080/userRegister/userCreated", {
+                method: "POST",
+                body: JSON.stringify({ nombre: dataRegister.username, email: dataRegister.email, clave: dataRegister.password }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             document.location.href = "login.html";
         }
     }
 });
+
+    
