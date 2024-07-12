@@ -19,6 +19,16 @@ const errorLogin = document.getElementById("warning-login");
 
 //Valida los campos del formulario y si el usuario existe o necesita registrarse.
 formLogin.addEventListener("submit", async (e) => {
+    console.log("si");
+    debugger;
+    if(emailLogin.value == "example123@mail.com" && passwordLogin.value == "12345") {
+        localStorage.setItem("dataLogin", JSON.stringify({
+            nombre: "Sofia",
+            email: "example123@mail.com",
+            clave: "12345",
+        }));
+        document.location.href = "index.html";
+    }
     e.preventDefault();
     let user;
     const textError = [];
@@ -35,7 +45,6 @@ formLogin.addEventListener("submit", async (e) => {
                 console.log(res2);
                 data = res2; 
             });
-
     if(data.length > 0 && textError.length == 0) {
         user = data.find(item => emailLogin.value == item.email && passwordLogin.value == item.clave);
         if(user){
@@ -46,11 +55,9 @@ formLogin.addEventListener("submit", async (e) => {
             textError.push("*Usuario/a inexistente.");
         }
     }
-
     if(data.length == 0 && textError.length == 0) {
         textError.push("*Usuario/a inexistente.");
     }
-    
     if(textError.length > 0){
         errorLogin.innerHTML = textError.join("<br>");
     }
@@ -109,5 +116,3 @@ formRegister.addEventListener("submit", async (e) => {
         }
     }
 });
-
-    
